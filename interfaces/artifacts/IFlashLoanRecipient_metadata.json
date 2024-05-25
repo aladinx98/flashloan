@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "tokens",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "amounts",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "feeAmounts",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "bytes",
+						"name": "userData",
+						"type": "bytes"
+					}
+				],
+				"name": "receiveFlashLoan",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"receiveFlashLoan(address[],uint256[],uint256[],bytes)": {
+					"details": "When `flashLoan` is called on the Vault, it invokes the `receiveFlashLoan` hook on the recipient. At the time of the call, the Vault will have transferred `amounts` for `tokens` to the recipient. Before this call returns, the recipient must have transferred `amounts` plus `feeAmounts` for each token back to the Vault, or else the entire flash loan will revert. `userData` is the same value passed in the `IVault.flashLoan` call."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"interfaces/IFlashLoanRecipient.sol": "IFlashLoanRecipient"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 2000
+		},
+		"remappings": []
+	},
+	"sources": {
+		"interfaces/IFlashLoanRecipient.sol": {
+			"keccak256": "0x33925ed3823b206e3ee5dc8b25b6e70f58ba536737ee0dfff345b4cfe94d60b2",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://813ae929e0afb996ddb73e165f7c4163d8f89575df20d1ed169fa3a72191a7fb",
+				"dweb:/ipfs/QmRwnfP8b3ZgDUpkv6TvusCeZBdhKEjxePpfwm1fVYFJrF"
+			]
+		}
+	},
+	"version": 1
+}

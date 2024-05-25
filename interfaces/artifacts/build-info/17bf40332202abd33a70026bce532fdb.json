@@ -1,0 +1,261 @@
+{
+	"id": "17bf40332202abd33a70026bce532fdb",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.17",
+	"solcLongVersion": "0.8.17+commit.8df45f5f",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"interfaces/IProtocolDataProvider.sol": {
+				"content": "// SPDX-License-Identifier: agpl-3.0\r\npragma solidity >=0.8.17 <0.9.0;\r\n\r\ninterface IProtocolDataProvider {\r\n    /**\r\n     * @notice getReserveData() allows users to get the available liquidity of a given asset.\r\n     * @dev getReserveData() takes an address of an asset as an argument and returns the available liquidity of that asset.\r\n     */\r\n    function getReserveData(\r\n        address asset\r\n    ) external view returns (uint256 availableLiquidity);\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": true,
+				"runs": 2000
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"interfaces/IProtocolDataProvider.sol": {
+				"IProtocolDataProvider": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "address",
+									"name": "asset",
+									"type": "address"
+								}
+							],
+							"name": "getReserveData",
+							"outputs": [
+								{
+									"internalType": "uint256",
+									"name": "availableLiquidity",
+									"type": "uint256"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {
+							"getReserveData(address)": {
+								"details": "getReserveData() takes an address of an asset as an argument and returns the available liquidity of that asset."
+							}
+						},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"getReserveData(address)": "35ea6a75"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"asset\",\"type\":\"address\"}],\"name\":\"getReserveData\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"availableLiquidity\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getReserveData(address)\":{\"details\":\"getReserveData() takes an address of an asset as an argument and returns the available liquidity of that asset.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getReserveData(address)\":{\"notice\":\"getReserveData() allows users to get the available liquidity of a given asset.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"interfaces/IProtocolDataProvider.sol\":\"IProtocolDataProvider\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":2000},\"remappings\":[]},\"sources\":{\"interfaces/IProtocolDataProvider.sol\":{\"keccak256\":\"0xbdf1fa18c27a5f1dd6ea0f45ac116fc08d363644575e4cb15845cd88bd8e596f\",\"license\":\"agpl-3.0\",\"urls\":[\"bzz-raw://0cda3060ccd3a793ea14d05bcd8379b9d4d68a89359bdf74d4c64352fe260688\",\"dweb:/ipfs/QmefJK62Pz53UGz4iFaqS5Wb6mQB19x2tv5HTun1oymFRV\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {
+							"getReserveData(address)": {
+								"notice": "getReserveData() allows users to get the available liquidity of a given asset."
+							}
+						},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"interfaces/IProtocolDataProvider.sol": {
+				"ast": {
+					"absolutePath": "interfaces/IProtocolDataProvider.sol",
+					"exportedSymbols": {
+						"IProtocolDataProvider": [
+							10
+						]
+					},
+					"id": 11,
+					"license": "agpl-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.8",
+								".17",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "38:32:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "IProtocolDataProvider",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"fullyImplemented": false,
+							"id": 10,
+							"linearizedBaseContracts": [
+								10
+							],
+							"name": "IProtocolDataProvider",
+							"nameLocation": "84:21:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"documentation": {
+										"id": 2,
+										"nodeType": "StructuredDocumentation",
+										"src": "113:232:0",
+										"text": " @notice getReserveData() allows users to get the available liquidity of a given asset.\n @dev getReserveData() takes an address of an asset as an argument and returns the available liquidity of that asset."
+									},
+									"functionSelector": "35ea6a75",
+									"id": 9,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "getReserveData",
+									"nameLocation": "360:14:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 5,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 4,
+												"mutability": "mutable",
+												"name": "asset",
+												"nameLocation": "393:5:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 9,
+												"src": "385:13:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 3,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "385:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "374:31:0"
+									},
+									"returnParameters": {
+										"id": 8,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 7,
+												"mutability": "mutable",
+												"name": "availableLiquidity",
+												"nameLocation": "437:18:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 9,
+												"src": "429:26:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 6,
+													"name": "uint256",
+													"nodeType": "ElementaryTypeName",
+													"src": "429:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "428:28:0"
+									},
+									"scope": 10,
+									"src": "351:106:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 11,
+							"src": "74:386:0",
+							"usedErrors": []
+						}
+					],
+					"src": "38:422:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

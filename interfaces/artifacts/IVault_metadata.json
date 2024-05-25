@@ -1,0 +1,87 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract IFlashLoanRecipient",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "address[]",
+						"name": "tokens",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "amounts",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "bytes",
+						"name": "userData",
+						"type": "bytes"
+					}
+				],
+				"name": "flashLoan",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Full external interface for the Vault core contract - no external or public methods exist in the contract that don't override one of these declarations.",
+			"kind": "dev",
+			"methods": {
+				"flashLoan(address,address[],uint256[],bytes)": {
+					"details": "Performs a 'flash loan', sending tokens to `recipient`, executing the `receiveFlashLoan` hook on it, and then reverting unless the tokens plus a proportional protocol fee have been returned. The `tokens` and `amounts` arrays must have the same length, and each entry in these indicates the loan amount for each token contract. `tokens` must be sorted in ascending order. The 'userData' field is ignored by the Vault, and forwarded as-is to `recipient` as part of the `receiveFlashLoan` call. Emits `FlashLoan` events."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"interfaces/IVault.sol": "IVault"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 2000
+		},
+		"remappings": []
+	},
+	"sources": {
+		"interfaces/IFlashLoanRecipient.sol": {
+			"keccak256": "0x33925ed3823b206e3ee5dc8b25b6e70f58ba536737ee0dfff345b4cfe94d60b2",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://813ae929e0afb996ddb73e165f7c4163d8f89575df20d1ed169fa3a72191a7fb",
+				"dweb:/ipfs/QmRwnfP8b3ZgDUpkv6TvusCeZBdhKEjxePpfwm1fVYFJrF"
+			]
+		},
+		"interfaces/IVault.sol": {
+			"keccak256": "0xf3a7c8e179edde8a1cd00f14fd3abe316c7a04598b276adfc695060e8f238c82",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://1d0dbbbe26b39a4cbb0db6055b6794a2226d148c1ccf74d2cf644850bc4f6183",
+				"dweb:/ipfs/QmaVWo9TrfkyxHaALNJjSeNfjYFNUkapenvGcrx18bnneW"
+			]
+		}
+	},
+	"version": 1
+}

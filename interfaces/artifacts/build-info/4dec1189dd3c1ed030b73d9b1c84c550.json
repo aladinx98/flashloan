@@ -1,0 +1,362 @@
+{
+	"id": "4dec1189dd3c1ed030b73d9b1c84c550",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.17",
+	"solcLongVersion": "0.8.17+commit.8df45f5f",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"interfaces/IFlashBorrower.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity >=0.8.17 <0.9.0;\r\n\r\ninterface IFlashBorrower {\r\n    /// @notice The flashloan callback. `amount` + `fee` needs to repayed to msg.sender before this call returns.\r\n    /// @param sender The address of the invoker of this flashloan.\r\n    /// @param token The address of the token that is loaned.\r\n    /// @param amount of the `token` that is loaned.\r\n    /// @param fee The fee that needs to be paid on top for this loan. Needs to be the same as `token`.\r\n    /// @param data Additional data that was passed to the flashloan function.\r\n    function onFlashLoan(\r\n        address sender,\r\n        address token,\r\n        uint256 amount,\r\n        uint256 fee,\r\n        bytes calldata data\r\n    ) external;\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": true,
+				"runs": 2000
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"interfaces/IFlashBorrower.sol": {
+				"IFlashBorrower": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "address",
+									"name": "sender",
+									"type": "address"
+								},
+								{
+									"internalType": "address",
+									"name": "token",
+									"type": "address"
+								},
+								{
+									"internalType": "uint256",
+									"name": "amount",
+									"type": "uint256"
+								},
+								{
+									"internalType": "uint256",
+									"name": "fee",
+									"type": "uint256"
+								},
+								{
+									"internalType": "bytes",
+									"name": "data",
+									"type": "bytes"
+								}
+							],
+							"name": "onFlashLoan",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {
+							"onFlashLoan(address,address,uint256,uint256,bytes)": {
+								"params": {
+									"amount": "of the `token` that is loaned.",
+									"data": "Additional data that was passed to the flashloan function.",
+									"fee": "The fee that needs to be paid on top for this loan. Needs to be the same as `token`.",
+									"sender": "The address of the invoker of this flashloan.",
+									"token": "The address of the token that is loaned."
+								}
+							}
+						},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"onFlashLoan(address,address,uint256,uint256,bytes)": "23e30c8b"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"fee\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"onFlashLoan\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"onFlashLoan(address,address,uint256,uint256,bytes)\":{\"params\":{\"amount\":\"of the `token` that is loaned.\",\"data\":\"Additional data that was passed to the flashloan function.\",\"fee\":\"The fee that needs to be paid on top for this loan. Needs to be the same as `token`.\",\"sender\":\"The address of the invoker of this flashloan.\",\"token\":\"The address of the token that is loaned.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"onFlashLoan(address,address,uint256,uint256,bytes)\":{\"notice\":\"The flashloan callback. `amount` + `fee` needs to repayed to msg.sender before this call returns.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"interfaces/IFlashBorrower.sol\":\"IFlashBorrower\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":2000},\"remappings\":[]},\"sources\":{\"interfaces/IFlashBorrower.sol\":{\"keccak256\":\"0x2316474eae90d2a7749c1ab876f10b571391a13d13b5432a9a897c541f71a602\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8e2618f01f0be914624e30feaa0872bc6d527501e9302d66d7ac663f84e0db11\",\"dweb:/ipfs/QmQieJaaaX2QaoVRRbaABLBZiCcFF13cwaXWJBM1VT8iDd\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {
+							"onFlashLoan(address,address,uint256,uint256,bytes)": {
+								"notice": "The flashloan callback. `amount` + `fee` needs to repayed to msg.sender before this call returns."
+							}
+						},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"interfaces/IFlashBorrower.sol": {
+				"ast": {
+					"absolutePath": "interfaces/IFlashBorrower.sol",
+					"exportedSymbols": {
+						"IFlashBorrower": [
+							16
+						]
+					},
+					"id": 17,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.8",
+								".17",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "35:32:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "IFlashBorrower",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"fullyImplemented": false,
+							"id": 16,
+							"linearizedBaseContracts": [
+								16
+							],
+							"name": "IFlashBorrower",
+							"nameLocation": "81:14:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"documentation": {
+										"id": 2,
+										"nodeType": "StructuredDocumentation",
+										"src": "103:480:0",
+										"text": "@notice The flashloan callback. `amount` + `fee` needs to repayed to msg.sender before this call returns.\n @param sender The address of the invoker of this flashloan.\n @param token The address of the token that is loaned.\n @param amount of the `token` that is loaned.\n @param fee The fee that needs to be paid on top for this loan. Needs to be the same as `token`.\n @param data Additional data that was passed to the flashloan function."
+									},
+									"functionSelector": "23e30c8b",
+									"id": 15,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "onFlashLoan",
+									"nameLocation": "598:11:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 13,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 4,
+												"mutability": "mutable",
+												"name": "sender",
+												"nameLocation": "628:6:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 15,
+												"src": "620:14:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 3,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "620:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 6,
+												"mutability": "mutable",
+												"name": "token",
+												"nameLocation": "653:5:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 15,
+												"src": "645:13:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 5,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "645:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 8,
+												"mutability": "mutable",
+												"name": "amount",
+												"nameLocation": "677:6:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 15,
+												"src": "669:14:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 7,
+													"name": "uint256",
+													"nodeType": "ElementaryTypeName",
+													"src": "669:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 10,
+												"mutability": "mutable",
+												"name": "fee",
+												"nameLocation": "702:3:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 15,
+												"src": "694:11:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 9,
+													"name": "uint256",
+													"nodeType": "ElementaryTypeName",
+													"src": "694:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 12,
+												"mutability": "mutable",
+												"name": "data",
+												"nameLocation": "731:4:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 15,
+												"src": "716:19:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes_calldata_ptr",
+													"typeString": "bytes"
+												},
+												"typeName": {
+													"id": 11,
+													"name": "bytes",
+													"nodeType": "ElementaryTypeName",
+													"src": "716:5:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes_storage_ptr",
+														"typeString": "bytes"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "609:133:0"
+									},
+									"returnParameters": {
+										"id": 14,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "751:0:0"
+									},
+									"scope": 16,
+									"src": "589:163:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 17,
+							"src": "71:684:0",
+							"usedErrors": []
+						}
+					],
+					"src": "35:720:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

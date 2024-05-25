@@ -1,0 +1,88 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract IFlashBorrower",
+						"name": "borrower",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "receiver",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "flashLoan",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Minimal interface for BentoBox token vault (V1) interactions",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"interfaces/IBentoBoxV1.sol": "IBentoBoxV1"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 2000
+		},
+		"remappings": []
+	},
+	"sources": {
+		"interfaces/IBentoBoxV1.sol": {
+			"keccak256": "0x27c125d5aadd744f28e77d15ab051727866b648c24a07f084b0d92423170d7a9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aa61a45302e88c56dab5dacd01690254ff8b257f4e10fafc2467376b600d04d5",
+				"dweb:/ipfs/QmZANNYgqfpYGeWPYJEd8VgiFpj2m1a3r8Z97AQJEVDBfH"
+			]
+		},
+		"interfaces/IFlashBorrower.sol": {
+			"keccak256": "0x2316474eae90d2a7749c1ab876f10b571391a13d13b5432a9a897c541f71a602",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8e2618f01f0be914624e30feaa0872bc6d527501e9302d66d7ac663f84e0db11",
+				"dweb:/ipfs/QmQieJaaaX2QaoVRRbaABLBZiCcFF13cwaXWJBM1VT8iDd"
+			]
+		}
+	},
+	"version": 1
+}

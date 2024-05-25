@@ -1,0 +1,56 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"author": "Solmate (https://github.com/transmissions11/solmate/blob/main/src/utils/SafeTransferLib.sol)",
+			"details": "Use with caution! Some functions in this library knowingly create dirty bits at the destination of the free memory pointer.Note that none of the functions in this library check that a token has code at all! That responsibility is delegated to the caller.",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Safe ETH and ERC20 transfer library that gracefully handles missing return values.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solmate/utils/SafeTransferLib.sol": "SafeTransferLib"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 2000
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solmate/tokens/ERC20.sol": {
+			"keccak256": "0xab8198e1322886729d1c2b106818fd863b34db8534ca937b0c9aa9d70617ae62",
+			"license": "AGPL-3.0-only",
+			"urls": [
+				"bzz-raw://0cc3ccd5e6bfb2611041659f61e1128956ee61a361470f4c543e3d169b456510",
+				"dweb:/ipfs/QmX57Q5bMubhZoApH1hwWsfxbFondUwnoCcAoWhZ7KivYM"
+			]
+		},
+		"solmate/utils/SafeTransferLib.sol": {
+			"keccak256": "0x57bb6402d0c9356873d8007af4866b28fa71474b4752aac2850c2ace263abb34",
+			"license": "AGPL-3.0-only",
+			"urls": [
+				"bzz-raw://8c5455e45e77d97a4756c22a2789720e0fb6da269fd41ea3dfe9eafef65fc52f",
+				"dweb:/ipfs/QmXQJdScyYsftEa2bixE8eVxyAKFYPZ1Vz8WJdgyFFbz6c"
+			]
+		}
+	},
+	"version": 1
+}

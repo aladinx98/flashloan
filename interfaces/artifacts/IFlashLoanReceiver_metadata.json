@@ -1,0 +1,89 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "assets",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "amounts",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "premiums",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "address",
+						"name": "initiator",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "params",
+						"type": "bytes"
+					}
+				],
+				"name": "executeOperation",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Aave",
+			"details": "implement this interface to develop a flashloan-compatible flashLoanReceiver contract*",
+			"kind": "dev",
+			"methods": {},
+			"title": "IFlashLoanReceiver interface",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Interface for the Aave fee IFlashLoanReceiver.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"interfaces/IFlashLoanReceiver.sol": "IFlashLoanReceiver"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 2000
+		},
+		"remappings": []
+	},
+	"sources": {
+		"interfaces/IFlashLoanReceiver.sol": {
+			"keccak256": "0x8bfcde1334283302a7e5fb30f62baa62085f65f2bf11c4e1418d66683afd9cae",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://1f4fbc0a42107a5f1bfcf2f109b8bb90863f36736a724fb4b0b79a3d0c979407",
+				"dweb:/ipfs/QmU3GH7x41JgxsU1a8WBo2VCtdhQz4MYWvVDrnMmg2UXvx"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,413 @@
+{
+	"id": "2704117ced8583efc75342d8a082868d",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.17",
+	"solcLongVersion": "0.8.17+commit.8df45f5f",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"interfaces/IFlashLoanReceiver.sol": {
+				"content": "// SPDX-License-Identifier: agpl-3.0\r\npragma solidity >=0.8.17 <0.9.0;\r\n\r\n/**\r\n * @title IFlashLoanReceiver interface\r\n * @notice Interface for the Aave fee IFlashLoanReceiver.\r\n * @author Aave\r\n * @dev implement this interface to develop a flashloan-compatible flashLoanReceiver contract\r\n **/\r\ninterface IFlashLoanReceiver {\r\n    function executeOperation(\r\n        address[] calldata assets,\r\n        uint256[] calldata amounts,\r\n        uint256[] calldata premiums,\r\n        address initiator,\r\n        bytes calldata params\r\n    ) external returns (bool);\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": true,
+				"runs": 2000
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"interfaces/IFlashLoanReceiver.sol": {
+				"IFlashLoanReceiver": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "address[]",
+									"name": "assets",
+									"type": "address[]"
+								},
+								{
+									"internalType": "uint256[]",
+									"name": "amounts",
+									"type": "uint256[]"
+								},
+								{
+									"internalType": "uint256[]",
+									"name": "premiums",
+									"type": "uint256[]"
+								},
+								{
+									"internalType": "address",
+									"name": "initiator",
+									"type": "address"
+								},
+								{
+									"internalType": "bytes",
+									"name": "params",
+									"type": "bytes"
+								}
+							],
+							"name": "executeOperation",
+							"outputs": [
+								{
+									"internalType": "bool",
+									"name": "",
+									"type": "bool"
+								}
+							],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"author": "Aave",
+						"details": "implement this interface to develop a flashloan-compatible flashLoanReceiver contract*",
+						"kind": "dev",
+						"methods": {},
+						"title": "IFlashLoanReceiver interface",
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"executeOperation(address[],uint256[],uint256[],address,bytes)": "920f5c84"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"assets\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"premiums\",\"type\":\"uint256[]\"},{\"internalType\":\"address\",\"name\":\"initiator\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"params\",\"type\":\"bytes\"}],\"name\":\"executeOperation\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Aave\",\"details\":\"implement this interface to develop a flashloan-compatible flashLoanReceiver contract*\",\"kind\":\"dev\",\"methods\":{},\"title\":\"IFlashLoanReceiver interface\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"Interface for the Aave fee IFlashLoanReceiver.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"interfaces/IFlashLoanReceiver.sol\":\"IFlashLoanReceiver\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":2000},\"remappings\":[]},\"sources\":{\"interfaces/IFlashLoanReceiver.sol\":{\"keccak256\":\"0x8bfcde1334283302a7e5fb30f62baa62085f65f2bf11c4e1418d66683afd9cae\",\"license\":\"agpl-3.0\",\"urls\":[\"bzz-raw://1f4fbc0a42107a5f1bfcf2f109b8bb90863f36736a724fb4b0b79a3d0c979407\",\"dweb:/ipfs/QmU3GH7x41JgxsU1a8WBo2VCtdhQz4MYWvVDrnMmg2UXvx\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"notice": "Interface for the Aave fee IFlashLoanReceiver.",
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"interfaces/IFlashLoanReceiver.sol": {
+				"ast": {
+					"absolutePath": "interfaces/IFlashLoanReceiver.sol",
+					"exportedSymbols": {
+						"IFlashLoanReceiver": [
+							21
+						]
+					},
+					"id": 22,
+					"license": "agpl-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.8",
+								".17",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "38:32:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "IFlashLoanReceiver",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"documentation": {
+								"id": 2,
+								"nodeType": "StructuredDocumentation",
+								"src": "74:220:0",
+								"text": " @title IFlashLoanReceiver interface\n @notice Interface for the Aave fee IFlashLoanReceiver.\n @author Aave\n @dev implement this interface to develop a flashloan-compatible flashLoanReceiver contract*"
+							},
+							"fullyImplemented": false,
+							"id": 21,
+							"linearizedBaseContracts": [
+								21
+							],
+							"name": "IFlashLoanReceiver",
+							"nameLocation": "306:18:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"functionSelector": "920f5c84",
+									"id": 20,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "executeOperation",
+									"nameLocation": "341:16:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 16,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 5,
+												"mutability": "mutable",
+												"name": "assets",
+												"nameLocation": "387:6:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 20,
+												"src": "368:25:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+													"typeString": "address[]"
+												},
+												"typeName": {
+													"baseType": {
+														"id": 3,
+														"name": "address",
+														"nodeType": "ElementaryTypeName",
+														"src": "368:7:0",
+														"stateMutability": "nonpayable",
+														"typeDescriptions": {
+															"typeIdentifier": "t_address",
+															"typeString": "address"
+														}
+													},
+													"id": 4,
+													"nodeType": "ArrayTypeName",
+													"src": "368:9:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+														"typeString": "address[]"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 8,
+												"mutability": "mutable",
+												"name": "amounts",
+												"nameLocation": "423:7:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 20,
+												"src": "404:26:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+													"typeString": "uint256[]"
+												},
+												"typeName": {
+													"baseType": {
+														"id": 6,
+														"name": "uint256",
+														"nodeType": "ElementaryTypeName",
+														"src": "404:7:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_uint256",
+															"typeString": "uint256"
+														}
+													},
+													"id": 7,
+													"nodeType": "ArrayTypeName",
+													"src": "404:9:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+														"typeString": "uint256[]"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 11,
+												"mutability": "mutable",
+												"name": "premiums",
+												"nameLocation": "460:8:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 20,
+												"src": "441:27:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+													"typeString": "uint256[]"
+												},
+												"typeName": {
+													"baseType": {
+														"id": 9,
+														"name": "uint256",
+														"nodeType": "ElementaryTypeName",
+														"src": "441:7:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_uint256",
+															"typeString": "uint256"
+														}
+													},
+													"id": 10,
+													"nodeType": "ArrayTypeName",
+													"src": "441:9:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+														"typeString": "uint256[]"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 13,
+												"mutability": "mutable",
+												"name": "initiator",
+												"nameLocation": "487:9:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 20,
+												"src": "479:17:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 12,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "479:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 15,
+												"mutability": "mutable",
+												"name": "params",
+												"nameLocation": "522:6:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 20,
+												"src": "507:21:0",
+												"stateVariable": false,
+												"storageLocation": "calldata",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes_calldata_ptr",
+													"typeString": "bytes"
+												},
+												"typeName": {
+													"id": 14,
+													"name": "bytes",
+													"nodeType": "ElementaryTypeName",
+													"src": "507:5:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes_storage_ptr",
+														"typeString": "bytes"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "357:178:0"
+									},
+									"returnParameters": {
+										"id": 19,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 18,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 20,
+												"src": "554:4:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bool",
+													"typeString": "bool"
+												},
+												"typeName": {
+													"id": 17,
+													"name": "bool",
+													"nodeType": "ElementaryTypeName",
+													"src": "554:4:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bool",
+														"typeString": "bool"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "553:6:0"
+									},
+									"scope": 21,
+									"src": "332:228:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 22,
+							"src": "296:267:0",
+							"usedErrors": []
+						}
+					],
+					"src": "38:525:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

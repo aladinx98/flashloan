@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "asset",
+						"type": "address"
+					}
+				],
+				"name": "getReserveData",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "availableLiquidity",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"getReserveData(address)": {
+					"details": "getReserveData() takes an address of an asset as an argument and returns the available liquidity of that asset."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"getReserveData(address)": {
+					"notice": "getReserveData() allows users to get the available liquidity of a given asset."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"interfaces/IProtocolDataProvider.sol": "IProtocolDataProvider"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 2000
+		},
+		"remappings": []
+	},
+	"sources": {
+		"interfaces/IProtocolDataProvider.sol": {
+			"keccak256": "0xbdf1fa18c27a5f1dd6ea0f45ac116fc08d363644575e4cb15845cd88bd8e596f",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://0cda3060ccd3a793ea14d05bcd8379b9d4d68a89359bdf74d4c64352fe260688",
+				"dweb:/ipfs/QmefJK62Pz53UGz4iFaqS5Wb6mQB19x2tv5HTun1oymFRV"
+			]
+		}
+	},
+	"version": 1
+}
